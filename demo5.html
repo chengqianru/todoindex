@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo5.css">
+    <link rel="stylesheet" href="swiper.css">
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="imgs/1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="imgs/2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="imgs/3.jpg" alt="">
+        </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    <!-- 如果需要导航按钮 -->
+    <!--<div class="swiper-button-prev"></div>-->
+    <!--<div class="swiper-button-next"></div>-->
+
+    <!-- 如果需要滚动条 -->
+    <!--<div class="swiper-scrollbar"></div>-->
+</div>
+<div class="type">
+    <div class="project active">未完成</div>
+    <div class="done">已完成</div>
+</div>
+<div class="content">
+    <ul class="itemlist">
+        <li>
+            <p>这里记录的是要做的事情</p>
+            <time>2018/3/27  16:00:00</time>
+            <span>★</span>
+        </li>
+    </ul>
+</div>
+<div class="add">新增</div>
+<div class="mask">
+    <div class="inputarea">
+        <textarea id="text" cols="30" rows="10"></textarea>
+        <div class="submit">提交</div>
+        <div class="update">修改</div>
+        <div class="cancel">X</div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/swiper.js"></script>
+
+<script src="js/jquery.transit.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/hammer.js"></script>
+<script src="js/demo5.js"></script>
+</body>
+</html>

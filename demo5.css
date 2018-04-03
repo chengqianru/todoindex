@@ -1,0 +1,165 @@
+/*rem       vw      vh      100%*/
+*{
+    margin: 0;      /*body-8px;*/
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background: #eee;
+    /*position: relative;*/
+}
+.swiper-container {
+    width: 100vw;
+    height: 30vh;
+    overflow: hidden;
+}
+.swiper-slide {
+    background: #eee;
+    font-size: 30px;
+    text-align: center;
+    /*line-height: 30vh;*/
+}
+.swiper-slide img{
+    width: 100vw;
+    height: 30vh;
+}
+.type{
+    width: 100%;
+    height: 10vh;
+    background: #FAF7E4;
+}
+.project,.done{
+    width: 50%;
+    height: 10vh;
+    font-size: 18px;
+    text-align: center;
+    line-height: 10vh;
+    float: left;
+    font-weight: bold;
+}
+.project.active{
+    background: #FCE0E0;
+}
+.done.active{
+    background: #DFE3E4;
+}
+.content{
+    width: 100vw;
+    height: 50vh;
+    background: #fff;
+    overflow: hidden;
+    /*//需要滚动条时*/
+    position: relative;
+}
+.content ul{
+    width: 100vw;
+    height: auto;
+}
+.content ul li{
+    width: 100vw;
+    height: 6vh;
+    /*line-height: 6vh;*/
+    position: relative;
+}
+.itemlist li p{
+    width: 60vw;
+    height: 6vh;
+    background: #fff;
+    line-height: 6vh;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;        /*文本超出*/
+}
+.itemlist li time{
+    width: 30vw;
+    height: 6vh;
+    background: #fff;
+    float: left;
+    /*line-height: 4vh;*/
+    font-size: 12px;
+    text-align: center;
+}
+.itemlist li span{
+    width: 10vw;
+    height: 6vh;
+    background: #fff;
+    float: left;
+    text-align: center;
+    line-height: 6vh;
+}
+.itemlist li span.active{
+    color: red;
+}
+.itemlist li div{
+    width: 20vw;
+    height: 6vh;
+    background: red;
+    float: left;
+    color: #fff;
+    text-align: center;
+    line-height: 6vh;
+    position: absolute;
+    right: -20vw;
+    top: 0;
+}
+.add{
+    width: 100vw;
+    height: 10vh;
+    background: #FCB4AD;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 10vh;
+    color: #fff;
+}
+.inputarea{
+    width: 100vw;
+    height: 62vh;
+    transform: translateY(-62vh);
+}
+.mask{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.67);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    display: none;
+    resize: none;
+}
+#text{
+    width: 100vw;
+    height: 40vh;
+    padding: 10vw;
+    border: none;
+    resize: none;
+    font-size: 16px;
+    display: block;
+}
+.submit,.update{
+    width: 100vw;
+    height: 10vh;
+    background: #FFAD79;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 10vh;
+    color: #fff;
+}
+.update{
+    display: none;
+}
+.cancel{
+    width: 6vh;
+    height: 6vh;
+    margin: 3vh auto;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 6vh;
+    font-size: 16px;
+}
